@@ -1,0 +1,36 @@
+
+<style media="screen">
+
+.loginScreen{
+
+text-align: center;
+padding-top: 10%;
+}
+
+#title{
+font-size: 40px;
+}
+
+</style>
+
+{{>header}}
+
+
+
+
+<div class="loginScreen">
+
+<h1 id='title'> Log in </h1>
+
+<form action="/login" method="POST">
+    <input type = "text" name = "username" placeholder ="username">
+    <input type = "password" name = "password" placeholder ="password">
+    <button> Login </button>
+</form>
+
+
+</div>
+
+
+
+{{>footer}}

@@ -1,0 +1,56 @@
+
+<link rel="stylesheet" href="/css/contact.css">
+
+{{>header}}
+
+<title>Contact</title>
+
+
+<section>
+
+  <h2 id='contactTitle'> Any questions? Feel free to reach out 24/7</h2>
+
+
+  <form class="contactForm" action="/contact" method="POST">
+
+
+<div class="container">
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" placeholder="Your email..">
+
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+
+  <label for="subject">Subject</label>
+  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+
+<input class='submitBtn' type="submit" value="Submit">
+
+</div>
+
+
+  </form>
+
+</section>
+
+
+<script type="text/javascript">
+
+document.querySelector(".submitBtn").addEventListener('click', ()=>{
+  alert(`                                          Thank you! \n Someone from our team will be getting back to your shortly`);
+})
+
+</script>
+
+
+
+
+
+{{>footer}}

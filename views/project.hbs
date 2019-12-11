@@ -1,0 +1,39 @@
+
+
+{{>header}}
+
+<title>Booking</title>
+
+<style media="screen">
+
+/* .container {
+  display: flex;
+  flex-basis: 200px;
+
+} */
+
+
+
+</style>
+
+
+<div class="dorm">
+
+ {{#each dorms}}
+
+      <div class="singleDorm">
+        <p class="title">  {{title}}  </p>
+        <a href="/project/{{id}}">  <img src="{{image}}" id='pic' height="400px" width="600px" alt="">     </a>
+      </div>
+
+ {{/each}}
+
+<br>
+
+</div>
+
+
+
+
+
+{{> footer}}

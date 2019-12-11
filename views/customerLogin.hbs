@@ -1,0 +1,38 @@
+
+
+
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Customers Email</th>
+    <th>Phone #</th>
+    <th>Confirmation Number</th>
+    <th>Dorm ID</th>
+    <th>Booked On:</th>
+  </tr>
+
+{{#each confirmation}}
+
+  <tr>
+    <td> {{firstname}} </td>
+    <td> {{lastname}} </td>
+    <td>{{email}}</td>
+    <td>{{phone}}</td>
+    <td> {{confirmationNumber}} </td>
+    <td> {{dormId}} </td>
+    <td> {{created}}</td>
+  </tr>
+
+{{/each}}
+
+</table>
+<br>
+
+</div>
+
+
+
+
+{{> footer}}

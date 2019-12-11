@@ -1,0 +1,110 @@
+<style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+</style>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+
+  <header>
+
+	<h2> <a href="/">Kean University</a></h2>
+
+    <nav>
+      <li><a href="/project">Book Now</a></li>
+      <li><a href= "/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li> <a href="/logout"> Log out </a> </li>
+
+    </nav>
+
+  </header>
+
+
+
+<a href="/logout"> Log out </a>
+
+<title>Admin</title>
+
+<style media="screen">
+
+
+  .adminTable{
+    padding-top: 200px;
+  }
+</style>
+
+<div class="adminTable">
+
+
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Customers Email</th>
+    <th>Phone #</th>
+    <th>Confirmation Number</th>
+    <th>Dorm ID</th>
+    <th>Booked On:</th>
+  </tr>
+
+{{#each confirmation}}
+
+  <tr>
+    <td> {{firstname}} </td>
+    <td> {{lastname}} </td>
+    <td>{{email}}</td>
+    <td>{{phone}}</td>
+    <td> {{confirmationNumber}} </td>
+    <td> {{dormId}} </td>
+    <td> {{created}}</td>
+  </tr>
+
+{{/each}}
+
+</table>
+<br>
+
+</div>
+
+
+
+
+{{> footer}}
