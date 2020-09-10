@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(methodOverride("_method"));
 var uniqueValidator = require('mongoose-unique-validator');
 
-const keys = require('./config/keys')
+const keys = require('./config')
 
 //////////////////
 var passport = require("passport");
